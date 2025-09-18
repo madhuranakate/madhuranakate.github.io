@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-charcoal text-beige font-body antialiased;
+}
+
+.section {
+  @apply py-20 px-6 sm:px-8 md:px-12 lg:px-20;
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto;
+}
+
+.btn {
+  @apply inline-flex items-center rounded-full px-5 py-3 font-medium transition-colors duration-200;
+}
+.btn-primary {
+  @apply bg-red-deep text-offwhite hover:bg-red-deep/90 focus:shadow-glow;
+}
+.btn-ghost {
+  @apply border border-beige/30 text-beige hover:bg-beige/10;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-sm;
+}
+
+/* Smooth scroll for anchor navigation */
+html { scroll-behavior: smooth; }
+
+/* Section divider */
+.section-divider { @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent; }
+
+/* Hover lift effect */
+.hover-lift { @apply transition-transform duration-300 will-change-transform; }
+.hover-lift:hover { @apply -translate-y-1; }
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-deep via-red-deep/80 to-beige;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-beige/80;
+}
