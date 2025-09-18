@@ -14,6 +14,8 @@ A modern, TED-inspired personal website built with React + Tailwind, deployable 
 ## Deploy (GitHub Pages)
 This repo is configured for GitHub Pages using GitHub Actions. Push to `main` and the action will build and deploy to Pages.
 
+Live site: https://madhuranakate.github.io/
+
 ## Content editing
 - Text lives inside `src/components` and data in `src/data`.
 - Colors and theme: `tailwind.config.js`.
